@@ -136,9 +136,13 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/) {
-  /*your code here*/
+function removeFlavorByName(array, flavor) {
+  const unwantedFlavor = array.indexOf(flavor);
+  array.splice(unwantedFlavor, 1);
+  return array;
 }
+
+console.log("task 6", removeFlavorByName(originalFlavors, "Cherry Macaron"));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
